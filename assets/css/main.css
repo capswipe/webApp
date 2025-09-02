@@ -2307,7 +2307,7 @@ p {
   padding-left: 100%;                         /* start off-screen on the right */
   -webkit-animation: scroll-text 60s linear infinite;
           animation: scroll-text 60s linear infinite;   /* set SAME duration */
-  font-size: 20px;                            /* ↑ increase size */
+  font-size: 30px;                            /* ↑ increase size */
   font-weight: 500;
   cursor: default;
 }
