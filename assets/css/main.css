@@ -2293,3 +2293,25 @@ p {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-text {
+  display: inline-block;
+  padding-left: 100%; /* starts off screen */
+  animation: scroll-left 25s linear infinite; /* adjust duration for speed */
+  font-size: 18px;   /* 👈 increase text size (default ~14–16px) */
+  font-weight: 500;  /* optional: makes it a bit bolder */
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* pause when hovered, resume on hover out */
+.scroll-container:hover .scroll-text {
+  animation-play-state: paused;
+}
